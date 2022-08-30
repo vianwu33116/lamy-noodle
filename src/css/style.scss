@@ -1,0 +1,20 @@
+@import "base";
+@import "mixin";
+@import "layout";
+@import "home";
+@import "order";
+@import "cartNav";
+@import "dish";
+@import "cart";
+@import "cartItem";
+@import "finishOrder";
+@import "login";
+@import "intro";
+
+
+//-------------media-----------------------
+@media(max-width: 767px){
+    .pd-3{
+        padding: 30px 10px 20px;
+    }
+}

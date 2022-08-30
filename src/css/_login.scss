@@ -1,0 +1,46 @@
+.login-main {
+  .form-container {
+    padding: 60px 12px;
+    background: $light;
+  }
+  .form {
+    background: $secondary;
+    color: $light-font;
+    max-width: 450px;
+    padding: 24px 24px 36px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .login-h1 {
+    @include font-larger;
+  }
+  .input-container {
+    width: 70%;
+    @include mobile-phone(){
+      width: 100%;
+    }
+    &:nth-child(4) {
+      border-bottom: 3px solid $light;
+    }
+  }
+  .form-control{
+    padding: 4px;
+    width: 100%;
+  }
+  .btn{
+    padding: 8px 0;
+    width: 100%;
+  }
+  .other-ways {
+    width: 70%;
+    padding: 8px 0;
+    border-color: $light;
+    cursor: pointer;
+    &:hover{
+      background: $danger;
+    }
+    @include mobile-phone(){
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.order-main {
+  background: $light;
+  max-width: 100%;
+  .order-confirm {
+    width: 60px;
+    background: $secondary;
+    color: $light-font;
+    text-align: center;
+    font-weight: bolder;
+    border-radius: 15px;
+    position: fixed;
+    top: 120px;
+    right: -5px;
+    @include mobile-phone(){
+      top: 180px;
+    }
+    &:hover {
+      background: $special;
+    }
+    .cart-icon{
+      display: inline-block;
+    }
+  }
+  .order-container {
+    margin-bottom: 40px;
+    padding: 40px 20px 0 40px;
+    @include mobile-phone(){
+        padding: 40px 20px 0 10px;
+    }
+    .nav {
+      width: 50px;
+      margin-right: 24px;
+      position: fixed;
+    }
+    .nav-top {
+      @include list;
+      @include mobile-phone(){
+          box-shadow: none;
+      }
+      .nav-h1 {
+        background: $main;
+        border-radius: 12px;
+        @include mobile-phone(){
+            display: none;
+        }
+      }
+      .expand-icon {
+        vertical-align: middle;
+      }
+    }
+    .nav-list {
+      .list-item {
+        @include list;
+        @include mobile-phone(){
+            box-shadow: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.cart-list {
+  margin-bottom: 60px;
+  .list-item {
+    background: $light-font;
+    @include box-shadow;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    font-weight: bold;
+    .onion {
+      margin-right: 12px;
+    }
+  }
+  .p-img {
+    border-radius: 15px;
+  }
+  .num-input {
+    width: 50px;
+    padding: 5px 0;
+  }
+}

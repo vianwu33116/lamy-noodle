@@ -1,0 +1,9 @@
+.cart-nav {
+  background: $special;
+  padding: 5px 0;
+  .link {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

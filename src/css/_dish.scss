@@ -1,0 +1,85 @@
+.dish-main {
+  .search-box {
+    justify-content: center;
+    margin-bottom: 30px;
+    .search-icon {
+      font-size: 32px;
+    }
+    .control {
+      .search-input {
+        outline-style: none;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 600px;
+        height: 32px;
+        margin: 0 1px;
+        @include ipad() {
+          width: 350px;
+        }
+        @include mobile-phone() {
+          width: 180px;
+        }
+      }
+      .button {
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        border: none;
+        background: $secondary;
+        border-radius: 5px;
+        color: $light-font;
+        &:hover {
+          background: $special;
+          border: 1px solid $light-font;
+        }
+      }
+    }
+  }
+  .dish {
+    flex-wrap: wrap;
+    padding: 0 50px;
+    justify-content: space-between;
+    @include semi-lg(){
+      padding: 0 30px;
+      justify-content: center;
+    }
+    .dish-box {
+      width: 240px;
+      padding: 20px;
+      flex-direction: column;
+      align-items: center;
+      background: $sec-article-wrap;
+      box-shadow: 0px 2px 6px #00000029;
+      margin: 0 12px 48px;
+      @include semi-lg(){
+          width: 280px;
+      }
+      @include ipad() {
+        margin-bottom: 24px;
+      }
+      .d-name {
+        font-size: 20px;
+      }
+      .d-img {
+        width: 218px;
+        height: 157px;
+        @include semi-lg(){
+            width: 250px;
+            height: 180px;
+        }
+      }
+      .p-price {
+        font-size: 20px;
+      }
+      .add-to-cart {
+        background: $secondary;
+        color: $light-font;
+        padding: 10px 80px;
+        border: none;
+        &:hover {
+          background: $special;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.cart-main {
+  .p-form {
+    background: $light;
+    padding: 48px 0 80px;
+  }
+  .cart-title {
+    font-size: 32px;
+    font-weight: bold;
+    .span-title {
+      border-bottom: 5px solid $special;
+    }
+  }
+  .cart-bottom {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    .cart-total {
+      margin-right: 30px;
+      @include font-larger;
+      border-bottom: 5px solid $special;
+    }
+    .submit {
+      @include font-larger;
+      font-family: $main-font;
+      @include btn-pd;
+    }
+  }
+  .no-dish {
+    background: $light-font;
+    @include box-shadow;
+    padding: 60px 0;
+    margin-bottom: 40px;
+    .face {
+      font-size: 50px;
+    }
+  }
+}

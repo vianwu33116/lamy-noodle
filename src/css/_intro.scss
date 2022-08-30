@@ -1,0 +1,58 @@
+.intro-main {
+  .banner {
+    position: relative;
+  }
+  .intro-title {
+    font-size: 36px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: white;
+    height: 200px;
+    opacity: 0.5;
+    @include absolute-center;
+  }
+  .article {
+    max-width: 100%;
+    border: 5px solid $dark;
+    @include mobile-phone() {
+      flex-direction: column-reverse;
+    }
+    .content {
+      width: 30%;
+      background: $dark;
+      color: white;
+      padding: 0 30px;
+      @include absolute-center;
+      @include mobile-phone() {
+        width: 100%;
+        padding: 30px 30px 60px;
+      }
+    }
+    .article-img {
+      width: 70%;
+      height: 380px;
+      @include mobile-phone() {
+        width: 100%;
+      }
+    }
+  }
+  .article02 {
+    border: none;
+    flex-direction: row-reverse;
+    @include mobile-phone() {
+      flex-direction: column-reverse;
+    }
+    .content {
+      background: $third;
+      color: $dark;
+      border-bottom: 5px solid $dark;
+      @include mobile-phone(){
+          background: $dark;
+          color: white;
+      }
+    }
+  }
+}

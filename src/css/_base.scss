@@ -1,0 +1,139 @@
+@charset 'utf-8';
+
+//import google icons
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+//import google-font
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@600&display=swap");
+
+//variables setup
+$family-font: "Nunito", sans-serif;
+$main-font: "Edu VIC WA NT Beginner", cursive, sans-serif,
+"Microsoft JhengHei";
+$main: #ffd1a4;
+$secondary: rgba(22, 73, 116, 0.842);
+$sec-article-wrap: rgba(255, 255, 255, 0.274);
+$third: rgba(231, 234, 236, 0.63);
+$light: rgba(209, 208, 208, 0.486);
+$dark: #000000;
+$light-font: #ffffff;
+$special: #f7b472;
+$danger: rgb(131, 75, 75);
+
+//base define
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Edu VIC WA NT Beginner", cursive, sans-serif,
+    "Microsoft JhengHei";
+  line-height: 1.5;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+label{
+  display: block;
+}
+
+select {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px 0;
+}
+
+//helpers define
+.mg-c {
+  margin: 0 auto;
+}
+.mb-0 {
+  margin-bottom: 10px;
+}
+.mb-01{
+  margin-bottom: 16px;
+}
+.mb-1 {
+  margin-bottom: 24px;
+}
+.mb-2 {
+  margin-bottom: 32px;
+}
+.mb-3 {
+  margin-bottom: 48px;
+}
+.mr-1 {
+  margin-right: 4px;
+}
+.mr-4 {
+  margin-right: 16px;
+}
+.mr-6 {
+  margin-right: 24px;
+}
+.ml-1 {
+  margin-left: 4px;
+}
+.ml-2 {
+  margin-left: 8px;
+}
+.pd-1 {
+  padding: 10px;
+}
+.pd-3 {
+  padding: 30px 30px 20px;
+}
+.pb-1{
+  padding-bottom: 16px;
+}
+.pb-2{
+  padding-bottom: 32px;
+}
+.pb-3 {
+  padding-bottom: 48px;
+}
+.bdr-1 {
+  border-radius: 10px;
+}
+.bd{
+  border: 1px solid $dark;
+}
+.d-flex {
+  display: flex;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+.link {
+  text-decoration: none;
+  color: $dark;
+  display: block;
+  cursor: pointer;
+}
+.txt-c {
+  text-align: center;
+}
+.fw-bold{
+    font-weight: bold;
+}
+.p-price {
+  font-family: "Times New Roman", Times, serif;
+}
+.btn{
+    background: $main;
+    border-color: $sec-article-wrap;
+    color: gray;
+    &:hover{
+        cursor: pointer;
+        background: $danger;
+        color: $light-font;
+    }
+}
+

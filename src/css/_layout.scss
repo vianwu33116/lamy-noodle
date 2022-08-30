@@ -1,0 +1,86 @@
+//-------------header---------------------------
+.header {
+  background: $main;
+  .container {
+    justify-content: space-between;
+    font-weight: bold;
+    @include mobile-phone() {
+      flex-direction: column;
+    }
+    .logo-container {
+      padding: 30px 0 20px;
+      @include mobile-phone() {
+        width: 100%;
+        justify-content: center;
+      }
+      .logo-figure {
+        width: 32px;
+        height: 32px;
+      }
+      .logo-name {
+        font-size: 20px;
+        margin-left: 10px;
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+    .header-links {
+      justify-content: space-evenly;
+      @include mobile-phone() {
+        width: 100%;
+      }
+      .header-link {
+        display: inline;
+        @include mobile-phone() {
+          width: 25%;
+          text-align: center;
+        }
+        &:hover{
+          background: $special;
+        }
+        .link-item {
+          display: block;
+          letter-spacing: 3px;
+        }
+      }
+    }
+  }
+}
+
+//-------------footer-----------------------------
+.footer {
+  background: $main;
+  justify-content: center;
+  padding: 60px 0;
+  font-weight: bold;
+  @include mobile-phone() {
+    flex-direction: column;
+  }
+  .footer-items {
+    text-align: center;
+    margin: 0px 40px 0px 40px;
+    @include mobile-phone() {
+      margin-bottom: 80px;
+    }
+    .home-h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid $dark;
+    }
+    .footer-wrap {
+      .footer-item {
+        font-size: 16px;
+        line-height: 2;
+        .contact-link {
+          display: inline;
+          margin-left: 5px;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
